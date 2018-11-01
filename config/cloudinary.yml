@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: dft153gko
+  api_key: '165986628967122'
+  api_secret: DtbLHT8TKJHdmwKNPe5H9SdLMrw
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: dft153gko
+  api_key: '165986628967122'
+  api_secret: DtbLHT8TKJHdmwKNPe5H9SdLMrw
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: dft153gko
+  api_key: '165986628967122'
+  api_secret: DtbLHT8TKJHdmwKNPe5H9SdLMrw
+  enhance_image_tag: true
+  static_image_support: false

@@ -1,0 +1,228 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/* universal */
+
+body {
+  background-color: #E3DAD8;
+}
+head {
+  background-color: #E3DAD8;
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+}
+
+.center h1 {
+  margin-bottom: 10px;
+}
+
+/* typography */
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+}
+
+h1 {
+  font-size: 4em;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+  text-align: center;
+  margin-left: 0px;
+  font-weight: bold
+}
+
+h2 {
+  font-size: 1.2em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+  color: #777;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+}
+
+/* header */
+
+.logo {
+  padding-top: 10px;
+  width: 200px;
+  height: 100px;
+  margin-left: 50px;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+.row {
+  background-color: #E3DAD8;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+  margin-bottom: 15px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  height: 175px;
+  width: 185px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.course_box{
+  margin-top: 25px;
+  vertical-align: middle;  
+  margin-left: 200px;
+  
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+label {
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.upload-preview{margin-bottom: 10px;}
+
+.list-block ul li{
+list-style-type:none;
+display:inline-block;
+margin:0 0 5px;
+}
+
+ul.nav-tabs{
+margin:0 0 10px;
+}
+
+ .save_image_layout {
+  height: 100px;
+  width: 150px;
+}
+
+.center_name{
+margin-right: 100px;
+font-weight: bold;
+font-size: 20px;
+}
+
+.error{
+color: red;
+margin-top: 0px;
+}
+
+table tr,table tr td,table tr th {
+    border: 1px solid #570303 !important;
+}
+table tr td a {
+  color: #000;
+  text-decoration: none !important;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.table {
+    width: 96%!important;
+    max-width: 77%!important;
+    margin-bottom: -1px;
+}
+
+.menu_logo{ padding-top: 10px;
+  width: 200px;
+  height: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;}
+
+  #blah{
+  	height:300px;
+  	width:300px;
+  }
+
+
+
+  

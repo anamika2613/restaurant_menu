@@ -1,0 +1,30 @@
+<div class="container">
+  <h2>Dishes for <%=@course.try(:name)%></h2>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Image</th>
+        <th>Dish Name</th>
+        <th>Dish Description</th>
+        <th>Dish Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <%@dishes.each do |dish|%>
+      <tr>
+        <td id="dish-img"><%=image_tag(dish.try(:image).try(:url))%></td>
+        <td><%=link_to dish.try(:name), dish_path(id: dish.id)%></td>
+        <td><%=dish.try(:description)%></td>
+        <td><%=dish.try(:price)%></td>
+      </tr>
+      <%end%>
+    </tbody>
+  </table>
+</div>
+
+<style type="text/css">
+  #dish-img img{
+    width: 100px;
+    height: 100px;
+  }
+</style>

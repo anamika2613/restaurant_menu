@@ -1,0 +1,27 @@
+<center><h1>Dish Information</h1></center>
+<div class="container">
+  <%= form_for(@dish, url: dishes_path, html: {id: "new-dish-form"}) do |f|%>
+      <div class="img-preview-div">
+        <img src="/assets/dummy.jpg" id= "blah" alt="">
+      </div>
+
+    <div>
+       <%= f.file_field :image, class: "image" %>
+    </div>
+    <div>
+      <%=f.label :name, "Dish Name"%>
+      <%= f.text_field :name, placeholder: "Name"%>
+    </div>
+    <div>
+      <%=f.label :description, "Dish Description"%>
+      <%= f.text_area :description, placeholder: "Dish Description"%>
+    </div>
+    <div>
+      <%=f.label :price, "Dish price"%>
+      <%= f.text_area :price, placeholder: "Dish price"%>
+    </div>
+    <%= f.hidden_field :course_id, :value => params[:course_id] %>
+    <%=f.submit "Submit"%>
+  <%end%>
+</div>
+

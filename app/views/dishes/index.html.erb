@@ -1,0 +1,14 @@
+<h2>Course Listing</h2>
+
+<div class="row">
+
+  <%@courses.each do |course|%>
+  <div class="column" style="background-image: url(<%=course&.image&.url%>); height: 300px; width: 300px; border: 1px solid black;">
+    <%=link_to "<button>#{course.name}</button>".html_safe, list_dishes_dish_path(course.id)%>
+    <%=link_to "<button>Add Dish</button>".html_safe, new_dish_path(course_id: course.id)%>
+  </div>
+  <%end%>
+
+
+</div>
+
