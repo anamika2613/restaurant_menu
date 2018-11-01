@@ -1,24 +1,16 @@
 # README
+in this repo we have two models named Course and Dish
+Course(name, image)
+Dish(name, image, description, price, course_id)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+We have created relation between Course and Dishes
+i.e Course has many dishes
 
-Things you may want to cover:
+git link
+https://github.com/anamika2613/restaurant_menu
+heroku link
+https://restaurantmenuclec.herokuapp.com/dishes
 
-* Ruby version
+erd pdf link
+https://restaurantmenuclec.herokuapp.com/erd.pdf
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...

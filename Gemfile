@@ -29,6 +29,7 @@ gem 'jquery-rails'
 gem 'jquery-validation-rails'
 gem 'jquery-ui-rails'
 gem 'pry'
+gem 'rails-erd'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
